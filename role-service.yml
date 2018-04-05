@@ -1,6 +1,12 @@
 # Http server
 server:
   port: 0  # Http port
+  
+# Discovery Server Access
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 logging:
   file: logs/${spring.application.name}.log
