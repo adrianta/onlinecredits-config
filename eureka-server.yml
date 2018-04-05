@@ -1,0 +1,13 @@
+# HTTP Server
+server:
+  port: 8761
+
+# Eureka Configuration Properties
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
