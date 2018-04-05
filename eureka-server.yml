@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: 8761
+  port: ${PORT:8761}
 
 # Eureka Configuration Properties
 eureka:
@@ -9,3 +9,8 @@ eureka:
     fetch-registry: false
   server:
     wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: true
+  instance:
+    hostname: localhost
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
