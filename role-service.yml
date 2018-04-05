@@ -1,6 +1,6 @@
 # Http server
 server:
-  port: 2222  # Http port
+  port: 1111  # Http port
 
 logging:
   file: logs/${spring.application.name}.log
