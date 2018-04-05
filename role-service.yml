@@ -1,0 +1,22 @@
+# Database Configuration
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.99.100:5432/examen
+    username: examen
+    password: password
+
+# Http server
+server:
+  port: 0  # Http port
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    org.springframework.cloud: 'DEBUG'
+    com.atsistemas: 'DEBUG'
+
+# Hibernate configuration
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  show_sql: false
