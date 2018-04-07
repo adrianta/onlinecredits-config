@@ -1,3 +1,8 @@
 # HTTP Server
 server:
   port: 3333   # HTTP (Tomcat) port
+
+onlinecredits:
+  role-service:
+    name: role-service
+    pingUrl: http://${onlinecredits.role-service.name}/api/v1/roles/
