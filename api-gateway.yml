@@ -1,0 +1,9 @@
+resources:
+  roles: http://ROLE-SERVICE/api/v1/roles/
+  rolesFlux: http://ROLE-SERVICE/api/v1/roles/usandoFlux
+
+
+
+# HTTP Server
+server:
+  port: 3333   # HTTP (Tomcat) port
