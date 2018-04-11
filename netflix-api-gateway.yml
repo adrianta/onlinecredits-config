@@ -1,6 +1,11 @@
 # HTTP Server
 server:
-  port: 3333   # HTTP (Tomcat) port
+  port: 8765   # HTTP (Tomcat) port
+  
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
 
 onlinecredits:
   role-service:
