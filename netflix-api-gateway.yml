@@ -10,4 +10,4 @@ eureka:
 onlinecredits:
   role-service:
     name: role-service
-    pingUrl: http://${onlinecredits.role-service.name}:8100/api/v1/roles/
+    pingUrl: http://${onlinecredits.role-service.name}/api/v1/roles/
